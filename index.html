@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi, I am Vishesh Adarshi</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&display=swap" rel="stylesheet">
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+</head>
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+    .heading{
+        font-family: 'Glory', sans-serif;
+    }
+    .anim_1{
+        animation-name: slide;
+        animation-duration: 2s;
+        transition: smooth;
+        transition: ease-in-out;
+    }
+    @keyframes slide {
+        0% {left:1rem;}
+        100% {left:7rem; top:29rem;}
+    }
+    .anim_2{
+        animation-name: slide_2;
+        animation-duration: 2s;
+        transition: smooth;
+        transition: ease-in-out;
+    }
+    @keyframes slide_2 {
+        0% {left:60rem;}
+        100% {left:34rem; top:10rem;}
+    }
+</style>
+<body x-data="data()" style="overflow-x: hidden;" class="bg-gray-200 bg-gradient-to-r from-blue-800 via-indigo-800 to-purple-800">
+    <div class="bg-gradient-to-r from-blue-800 via-indigo-800 to-purple-800 h-screen mx-auto">
+        <!-- Nav Bar -->
+        <div class="bg-black sticky top-0 z-10 text-white text-center p-4 flex shadow-xl">
+            <button href="index.html" class="transition delay-150 duration-700 ease-in-out font-bold text-3xl tracking-widest hover:text-green-600 ml-20 focus:outline-none" style="font-family: 'Birthstone', cursive;">Vishesh Adarshi</button>
+            <a href="index.html" class="transition delay-150 duration-300 ease-in-out font-semibold mt-1 ml-96 text-lg hover:text-green-600">Home</a>
+            <a href="#about" class="transition delay-150 duration-300 ease-in-out font-semibold mt-1 text-lg ml-12 hover:text-green-600">About me</a>
+            <a href="contact.html" class="transition delay-150 duration-300 ease-in-out font-semibold mt-1 text-lg ml-12 hover:text-green-600">Get in Touch</a>
+            <a href="blog.html" class="transition delay-150 duration-300 ease-in-out font-semibold mt-1 text-lg ml-12 hover:text-green-600">Blog</a>
+            <a href="projects.html" class="transition delay-150 duration-300 ease-in-out font-semibold mt-1 text-lg ml-12 hover:text-green-600">My Projects</a>
+        </div>
+        <!-- Hero -->
+        <div class="h-5/6 flex mb-8">
+            <div class="text-white font-bold text-6xl heading ml-28 mt-28">
+                A Technology<br>for Programmers<br>buid by Programmer.<br>
+            </div>
+            <span class="text-xl text-white heading" style="position: absolute; left: 7rem; top: 23.5rem;">A technology for posting your articles about programming<br> as well as a portfoilo website for me.</span>
+            <img src="assets/hero.svg" alt="" class="anim_2 w-3/4 h-96" style="position: absolute; left: 34rem; top: 10rem;">
+            <div class="">
+                <a href="blog.html" class="anim_1 transition duration-1000 border-2 rounded hover:shadow-2xl hover:bg-purple-500 py-3 px-6 text-white font-semibold" style="position: absolute; left: 7rem; top: 29rem;">Get Started</a>
+            </div>
+        </div>
+        <!-- Aritcles -->
+        <div class="relative">
+            <span class="z-0 text-4xl font-thin mt-16 ml-8 text-white">Latest Programming Blogs</span>
+            <span class="text-white absolute right-10 font-thin mt-2 hover:text-green-500 transition duration-1000 cursor-pointer text-md">See All</span>
+        </div>
+        <div class="grid grid-cols-3 mt-8 gap-20 flex justify-between items-center">
+            <div class="relative pb-7 shadow-xl bg-white ml-8 rounded">
+                <img src="assets/HTML.svg" alt="HTML" class="h-full w-full">
+                <h1 class="mt-5 ml-7 text-xl font-bold">Interesting Facts about Web Dev !!</h1>
+                <div class="mt-2 ml-7 mb-8"><span class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, odit quae. Eius, repudiandae et perspiciatis quam, eum quia iure dolorem voluptate voluptates maximeEius, repudiandae et perspiciatis quam, eum quia iure dolorem voluptate voluptates maxim....</span></div>
+                <a href="" class="bg-purple-500 text-white px-4 py-2 ml-5 rounded absolute bottom-0 mb-3 hover:bg-purple-600 transition duration-1000 transform hover:scale-110">Read More</a>
+            </div>
+            <div class="relative pb-10 shadow-xl bg-white rounded">
+                <img src="assets/data.svg" alt="DATA SCIENCE" class="h-64 w-full">
+                <h1 class="mt-7 ml-8 font-bold text-xl">More About Data Science and ML</h1>
+                <div class="mt-2 mb-4 ml-7 text-sm"><span class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum minima nidolor sit amet consectetur adipisicing elit. Eum minima khdtyyehil distinctio, ipsam blanditiis explicabo? Ea, quia totam magni expedita ab corporis, corrupti tempore quos incidunt dolores laborum, doloribus eum...</span></div>
+                <a href="" class="bg-purple-500 text-white px-4 py-2 ml-5 rounded absolute bottom-0 mb-3 hover:bg-purple-600 transition duration-1000 transform hover:scale-110">Read More</a>
+            </div>
+            <div class="relative pb-10 bg-white mr-8 rounded">
+                <img src="assets/ai.svg" alt="DATA SCIENCE" class="h-64 w-full">
+                <h1 class="mt-7 ml-8 font-bold text-xl">More About Artificial Intelligence</h1>
+                <div class="mt-2 mb-4 ml-7 text-sm"><span class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum minima nidolor sit amet consectetur adipisicing elit. Eum minima khdtyyehil distinctio, ipsam blanditiis explicabo? Ea, quia totam magni expedita ab corporis, corrupti tempore quos incidunt dolores laborum, doloribus eum....</span></div>
+                <a href="" class="bg-purple-500 text-white px-4 py-2 ml-5 rounded absolute bottom-0 mb-3 hover:bg-purple-600 transition duration-1000 transform hover:scale-110">Read More</a>
+            </div>
+        </div>
+        <!-- About Me -->
+        <h1 class="text-5xl text-white font-thin mt-24 pl-28">Know More About Me....</h1>
+        <div id="about" class="z-0 bg-white w-5/6 mt-8 h-5/6 rounded-lg mx-auto flex">
+            <img class="p-3" src="https://static.uacdn.net/thumbnail/user/jpeg/w768/42c4048e5b8948bfa4f5311318df8057.jpeg" alt="">
+            <span class="ml-20">
+                <h1 class="mt-8 text-xl font-semibold heading">Hello, My Name  is</h1>
+                <h1 class="mt-4 heading font-bold text-6xl">VISHESH ADARSHI</h1>
+                <h1 class="mt-2 text-lg font-bold text-gray-900">ML ENTHUSIAST | FULL STACK DEVELOPER</h1>
+                <h1 class="mt-6 text-lg font-semibold">I love creating good looking websites with powerful<br> backend. I also love learning Machine Learning.<br>Welcome To my Websites here you can view my<br> projects or know more about me<br> or write a blog or contact me by writing a message.</h1>
+                <span class="flex ">
+                    <a href="contact.html" class="font-semibold hover:bg-gray-200 transition duration-1000 transform hover:scale-105 mt-10 rounded-md p-2 text-xl border-2 border-black">
+                        Get In Touch
+                    </a>
+                    <a href="" class="ml-4 font-semibold transition duration-1000 transform hover:scale-105 hover:bg-gray-200 mt-10 rounded-md p-2 text-xl border-2 border-black">
+                        Write a Blog
+                    </a>
+                </span>
+            </span>
+        </div>
+        <!-- My Skills -->
+        <div class="text-white text-xl ml-28 font-thin">
+            <div class="text-5xl mt-20 ml-24 pl-20 mb-8">My Skills</div>
+            <div class="space-y-8">
+                <div class="flex">
+                    <h1>Python</h1>
+                    <div class="ml-24 bg-gradient-to-r z-10 from-blue-500 to-green-500 w-64 rounded-full"></div>
+                    <div class="bg-gray-200 w-2/4 z-0 -ml-64 rounded-full"></div>
+                </div>
+                <div class="flex">
+                    <h1>AlpineJS</h1>
+                    <div class="ml-20 bg-gradient-to-r z-10 from-blue-500 to-green-500 w-96 rounded-full"></div>
+                    <div class="bg-gray-200 w-2/4 z-0 -ml-96 rounded-full"></div>
+                </div>
+                <div class="flex">
+                    <h1>TailwindCSS</h1>
+                    <div class="ml-14 bg-gradient-to-r z-10 from-blue-500 to-green-500 w-2/5 rounded-full"></div>
+                    <div class="bg-gray-200 w-2/5 z-0 -ml-96 rounded-full"></div>
+                </div>
+                <div class="flex">
+                    <h1>C/C++</h1>
+                    <div class="ml-24 bg-gradient-to-r z-10 from-blue-500 to-green-500 w-80 rounded-full"></div>
+                    <div class="bg-gray-200 w-2/4 z-0 -ml-80 rounded-full"></div>
+                </div>
+            </div>
+        </div>
+        <div class="pb-8"></div>
+        <div class="flex">
+            <div class="ml-52"></div>
+            <h1 class="text-white font-thin ml-96">&copy; 2021 | Vishesh Adarshi | Frontend Developer</h1>
+        </div>
+        <div class="pb-8"></div>
+    </div>
+    <script>
+        function data(){
+            return {
+                themeColor: "pink",
+            };
+        }
+    </script>
+</body>
+</html>
